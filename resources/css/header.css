@@ -1,0 +1,89 @@
+body {
+  background-color: #0f0f0f;
+  color: #f0b80e;
+  font-family: 'Poppins', 'Roboto', 'Oxanium', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Navbar personalizado */
+.navbar {
+  background: linear-gradient(90deg, #1a1a1a 0%, #0f0f0f 100%);
+  border-bottom: 3px solid #f0b80e;
+  box-shadow: 0 2px 8px rgba(240, 184, 14, 0.3);
+  font-weight: 600;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-brand {
+  font-family: 'grinddemolished', 'Oxanium', sans-serif;
+  font-size: 2.25rem;
+  color: #f0b80e !important;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #fff200 !important;
+  text-shadow: 0 0 8px #fff200;
+}
+
+/* Enlaces navbar */
+.nav-link {
+  color: #f0b80e !important;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.35s ease;
+
+}
+
+/* Línea animada debajo del link */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #f0b80e, #fff200);
+  border-radius: 2px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 60%;
+}
+
+/* Hover y foco en link */
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff200 !important;
+  text-shadow: 0 0 6px #fff200;
+}
+
+/* Toggler personalizado */
+.navbar-toggler {
+  border: 2px solid #f0b80e;
+  transition: border-color 0.3s ease;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  border-color: #fff200;
+}
+
+/* Icono toggler color amarillo */
+.navbar-toggler-icon {
+  filter: invert(85%) sepia(84%) saturate(577%) hue-rotate(4deg) brightness(1.05) contrast(1.1);
+}
