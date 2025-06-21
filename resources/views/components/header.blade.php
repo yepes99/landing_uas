@@ -1,7 +1,12 @@
 <style>
 .navbar {
-  background: rgba(15, 15, 15, 0.5); /* negro semitransparente */
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* un valor alto para que esté sobre otros elementos */
+  background: rgba(15, 15, 15, 0.5); /* ya tienes este fondo semitransparente */
+  backdrop-filter: saturate(180%) blur(10px); /* opcional: para efecto blur en el fondo */
 }
 
 .navbar h1{
@@ -79,21 +84,7 @@
   color: var(--color-primary);
 }
 
-/* Botón personalizado dorado */
-.btn-gold {
-  background-color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-  color: black;
-  font-weight: var(--font-weight-bold);
-  transition: all 0.3s ease;
-  font-family: var(--font-primary);
-}
 
-.btn-gold:hover {
-  background-color: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-primary);
-}
 </style>
 
 <!-- NAVBAR -->
@@ -106,23 +97,70 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="service.html" class="nav-item nav-link">Service</a>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                <div class="dropdown-menu m-0">
-                    <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                    <a href="team.html" class="dropdown-item">Our Barber</a>
-                    <a href="open.html" class="dropdown-item">Working Hours</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    <a href="404.html" class="dropdown-item">404 Page</a>
-                </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+           <a href="#inicio" class="nav-item nav-link active">inicio</a>
+            <a href="#sobre-nosotros" class="nav-item nav-link">Sobre Nosotros</a>
+            <a href="#cursos" class="nav-item nav-link">cursos</a>
+            <a href="#nuestro-equipo" class="nav-item nav-link">nuestro equipo</a>
+            <a href="#contacto" class="nav-item nav-link">Contacto</a>
         </div>
         <a href="#" class="btn btn-gold rounded-0 py-2 px-lg-4 d-none d-lg-block">
             Appointment <i class="fa fa-arrow-right ms-3"></i>
         </a>
     </div>
 </nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+  let manualActiveId = null; // Id marcado por click (ignora scroll)
+
+  function activateLink(id) {
+    navLinks.forEach(link => {
+      link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+    });
+  }
+
+  function onScroll() {
+    if(manualActiveId) return; // Ignorar scroll si está activo manualmente
+
+    let scrollPos = window.scrollY || window.pageYOffset;
+    let currentSectionId = null;
+
+    sections.forEach(section => {
+      const top = section.offsetTop - 70; // Ajusta según navbar
+      const bottom = top + section.offsetHeight;
+
+      if(scrollPos >= top && scrollPos < bottom) {
+        currentSectionId = section.getAttribute("id");
+      }
+    });
+
+    if(currentSectionId) {
+      activateLink(currentSectionId);
+    }
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+      if(href.startsWith("#")) {
+        manualActiveId = href.substring(1);
+        activateLink(manualActiveId);
+        
+        // Opcional: remover el bloqueo manual tras 2 segundos para volver a scroll automático
+        setTimeout(() => {
+          manualActiveId = null;
+          onScroll();
+        }, 2000);
+      }
+    });
+  });
+
+  window.addEventListener("scroll", onScroll);
+
+  onScroll();
+});
+
+</script>

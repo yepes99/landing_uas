@@ -16,10 +16,7 @@
   font-weight: var(--font-weight-bold);
   margin-bottom: 2.5rem;
   font-size: 2.5rem;
-  text-shadow: 
-    0 0 3px rgba(240, 184, 14, 0.7), 
-    0 0 6px rgba(240, 184, 14, 0.5), 
-    0 0 10px rgba(240, 184, 14, 0.3);
+
 }
 
 .contact-wrapper {
@@ -139,25 +136,7 @@ form.contact-form textarea {
   min-height: 140px;
 }
 
-.btn-glow {
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
-  font-weight: var(--font-weight-bold);
-  color: #000;
-  background: var(--color-primary);
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  box-shadow: none;
-}
 
-.btn-glow:hover {
-  background: var(--color-primary-dark);
-  box-shadow: none;
-}
 
 </style>
 
@@ -192,7 +171,7 @@ form.contact-form textarea {
         <input type="text" name="name" placeholder="Nombre" required>
         <input type="email" name="email" placeholder="Correo electrónico" required>
         <textarea name="message" placeholder="Mensaje" required></textarea>
-        <button type="submit" class="btn-glow">Enviar</button>
+        <button type="submit" class="btn-gold">Enviar</button>
       </form>
     </div>
 

@@ -2,7 +2,7 @@
  /* Colores */
   --color-primary: #f0b80e;      /* amarillo principal */
   --color-primary-dark: #e4a700; /* amarillo oscuro */
-  --color-dark: #222222;          /* fondo oscuro */
+  --color-dark: #333232;          /* fondo oscuro */
   --color-light: #f0b80e;         /* color claro para texto e iconos */
   --color-white: #ffffff;         /* blanco */
   /* Tipografía */
@@ -22,11 +22,33 @@
 
 /* Aplicación global */
 body {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(5, 5, 5, 0.90);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: 'Oswald', sans-serif !important;
 
+}
+
+
+.btn-gold {
+    background: linear-gradient(90deg, #fef08a, #facc15);
+    color: #000;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    box-shadow: 0 0 3px rgba(250, 204, 21, 0.25); /* glow muy tenue */
+    transition: all 0.3s ease-in-out;
+    font-size: 0.95rem;
+}
+
+
+.btn-gold:hover {
+    background: linear-gradient(90deg, #f0b80e, #fff200);
+    color: #111;
+    box-shadow:
+        0 0 6px rgba(255, 242, 0, 0.6),
+        0 0 12px rgba(255, 242, 0, 0.4);
 }
 

@@ -60,17 +60,17 @@
   width: 50%;
 }
 
-/* Imagen con efecto zoom en hover */
 .team-section .team-img img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Al hacer hover: vuelve a color y se aplica zoom */
 .team-section .team-img:hover img {
+  filter: grayscale(0%);
   transform: scale(1.1);
 }
+
 
 /* Iconos sociales ocultos inicialmente */
 .team-section .team-social {

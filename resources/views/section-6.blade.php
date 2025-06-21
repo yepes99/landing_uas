@@ -60,7 +60,7 @@
     <div class="row g-0">
       <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="h-100">
-          <img class="img-fluid h-100" src="img/open.jpg" alt="Curso de Arte Digital" />
+          <img class="img-fluid h-100" src="{{ asset('images/section-6/section-6.jpg') }}" alt="Curso de Arte Digital" />
         </div>
       </div>
       <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
