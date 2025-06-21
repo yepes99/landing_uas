@@ -35,7 +35,7 @@
 }
 
 /* Título */
-.banner-caption h2 {
+.banner-caption h1 {
   font-size: clamp(2rem, 5vw, 3.8rem);
   font-weight: 700;
   background: linear-gradient(90deg, #fff200, #f0b80e);
@@ -120,7 +120,7 @@
         <img src="{{ asset('images/hero/hero_carusel_1.jpg') }}" alt="Clases online de arte digital para principiantes y avanzados">
 
         <div class="banner-caption">
-            <h2 class="text-uppercase mb-4">Domina el arte digital <br>desde cero</h2>
+            <h1 class="text-uppercase mb-4">Domina el arte digital <br>desde cero</h1>
             <p class="subtitle text-uppercase mb-4">
                 <i class="fa-solid fa-laptop me-3 icon-gold" aria-hidden="true"></i>Clases online en vivo y grabadas
             </p>
