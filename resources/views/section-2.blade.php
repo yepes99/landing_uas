@@ -1,24 +1,20 @@
 <style>
 
-/* Divs para altura extra arriba y abajo */
-
-/* Prefijo: aboutus- */
-
 .aboutus-lead {
   font-size: 1.15rem;
-  color: var(--color-light) !important; /* color claro para texto e iconos */
+  color: var(--color-light) !important;
 }
 
 .aboutus-experience-badge {
   width: 160px;
-  border-radius: var(--border-radius-none); /* sin bordes redondeados */
-  background: var(--color-dark); /* fondo oscuro */
-  color: var(--color-primary); /* letras amarillas */
+  border-radius: var(--border-radius-none);
+  background: var(--color-dark);
+  color: var(--color-primary);
   box-shadow: 0 8px 20px rgba(240, 184, 14, 0.6);
   font-family: var(--font-base);
   position: absolute;
   bottom: -80px;
-  right: 80%;
+  left: 0;
   text-align: center;
   padding: 1rem;
   z-index: 10;
@@ -38,7 +34,7 @@
 }
 
 .aboutus-text p {
-  color: var( --color-white) !important;
+  color: var(--color-white) !important;
   margin-bottom: 1rem;
 }
 
@@ -50,15 +46,10 @@
 
 .aboutus-img-fluid {
   border-radius: var(--border-radius-none);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-  transition: transform 0.5s ease;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.aboutus-position-relative:hover .aboutus-img-fluid {
-  transform: scale(1.05);
 }
 
 .aboutus-text h1,
@@ -66,30 +57,6 @@
   font-family: var(--font-base);
   color: var(--color-primary);
   margin-top: 0;
-}
-
-@media (max-width: 768px) {
-  .aboutus-experience-badge {
-    position: static !important;
-    width: 100%;
-    margin-top: 1.5rem;
-    box-shadow: none;
-    text-align: center;
-    border-radius: var(--border-radius-none);
-    background: var(--color-dark);
-    color: var(--color-primary);
-    right: auto;
-    bottom: auto;
-  }
-
-  .aboutus-badge-warning {
-    border-radius: var(--border-radius-none) !important;
-    color: var(--color-dark) !important;
-  }
-
-  .aboutus-position-relative:hover .aboutus-img-fluid {
-    transform: none;
-  }
 }
 
 /* Animación fadeIn */
@@ -104,17 +71,80 @@
   }
 }
 
-/* Elementos inicialmente ocultos */
 .aboutus-wow-fadein {
   opacity: 0;
 }
 
-/* Clase para activar animación */
 .aboutus-fadein-active {
   animation-name: fadeIn;
   animation-duration: 1.2s;
   animation-fill-mode: both;
   opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .aboutus-experience-badge {
+    position: static !important;
+    width: 100%;
+    margin-top: 1.5rem;
+    box-shadow: none;
+    text-align: center;
+    border-radius: var(--border-radius-none);
+    background: var(--color-dark);
+    color: var(--color-primary);
+  }
+
+  .aboutus-text h1 {
+    font-size: 2rem;
+  }
+
+  .aboutus-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .aboutus-lead {
+    font-size: 1rem;
+  }
+
+  .aboutus-text p {
+    font-size: 0.95rem;
+  }
+
+  .aboutus-badge-warning {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutus-text {
+    text-align: left;
+  }
+
+  .aboutus-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .aboutus-text h3 {
+    font-size: 1rem;
+  }
+
+  .aboutus-lead {
+    font-size: 0.95rem;
+  }
+
+  .aboutus-text p {
+    font-size: 0.9rem;
+  }
+
+  .aboutus-experience-badge h1 {
+    font-size: 3rem;
+  }
+
+  .aboutus-experience-badge h3 {
+    font-size: 1rem;
+  }
 }
 
 </style>
