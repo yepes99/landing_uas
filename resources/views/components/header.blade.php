@@ -50,39 +50,40 @@
   color: var(--color-primary);
 }
 
-/* Ícono del dropdown personalizado */
-.navbar .dropdown-toggle::after {
-  border: none;
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  vertical-align: middle;
-  margin-left: 8px;
-  color: var(--color-primary);
-}
+
 
 /* Responsive ajustes para móviles */
 @media (max-width: 991.98px) {
   .navbar .navbar-nav .nav-link {
     margin-right: 0;
-    padding: 10px 0;
+    padding: 12px 0;
   }
+
+  .navbar .navbar-nav .nav-link::after {
+    bottom: 4px;
+    height: 2px;
+    width: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+    content: '';
+    position: absolute;
+  }
+
+  .navbar .navbar-nav .nav-link:hover::after,
+  .navbar .navbar-nav .nav-link.active::after {
+    width: 12%;
+  }
+
   .navbar .navbar-nav {
     margin-top: 8px;
     border-top: 1px solid var(--color-primary);
   }
+   .navbar-toggler-icon {
+    filter: invert(1);
+  }
 }
 
-/* Título dorado con variable */
-.text-title {
-  color: var(--color-primary);
-  font-family: var(--font-primary);
-}
-
-/* Ícono amarillo dentro del título */
-.text-title i {
-  color: var(--color-primary);
-}
 
 
 </style>
@@ -98,9 +99,9 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
            <a href="#inicio" class="nav-item nav-link active">inicio</a>
-            <a href="#sobre-nosotros" class="nav-item nav-link">Sobre Nosotros</a>
+            <a href="#sobre-nosotros" class="nav-item nav-link"> Nosotros</a>
             <a href="#cursos" class="nav-item nav-link">cursos</a>
-            <a href="#nuestro-equipo" class="nav-item nav-link">nuestro equipo</a>
+            <a href="#nuestro-equipo" class="nav-item nav-link">equipo</a>
             <a href="#contacto" class="nav-item nav-link">Contacto</a>
         </div>
         <a  href="#contacto" class="btn btn-gold rounded-0 py-2 px-lg-4 d-none d-lg-block">

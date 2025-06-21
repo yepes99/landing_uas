@@ -58,7 +58,7 @@
     <div class="row g-0">
       <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
-          <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Cursos</p>
+          <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">CURSOS</p>
           <h1 class="text-uppercase mb-4">Nuestros Cursos de Arte Digital y Precios</h1>
           <div>
             <div class="d-flex justify-content-between border-bottom py-2">
