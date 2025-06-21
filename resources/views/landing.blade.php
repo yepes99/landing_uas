@@ -12,6 +12,9 @@
 @include('section-2')
 @include('section-3')
 @include('section-4')
+@include('section-5')
+@include('section-6')
+
 @include('contact-form')
   
 

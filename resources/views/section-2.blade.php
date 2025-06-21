@@ -4,15 +4,11 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-      font-family: 'Oswald', sans-serif !important;
+ font-family: 'Oswald', sans-serif !important;
 
 }
 
 /* Divs para altura extra arriba y abajo */
-.divb, .aab {
-  height: 30vh;
-  width: 100%;
-}
 
 /* Prefijo: aboutus- */
 
@@ -131,7 +127,7 @@ body {
 </style>
 
 <!-- Div arriba para altura extra -->
-<div class="divb"></div>
+
 
 <!-- About Start -->
 <div class="container-fluid py-5 aboutus-container">
@@ -172,7 +168,7 @@ body {
 <!-- About End -->
 
 <!-- Div abajo para altura extra -->
-<div class="aab"></div>
+
 
 <script>
   // Detectar cuando un elemento entra en viewport

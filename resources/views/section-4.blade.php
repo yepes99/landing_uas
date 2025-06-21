@@ -1,168 +1,98 @@
 <style>
-  .our-work-section {
-    padding: 6rem 2rem;
-    text-align: center;
-    color: #fff;
-    background-image: radial-gradient(rgba(240, 184, 14, 0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
+  /* Estilo general para la sección Price & Plan */
+  .price-plan-section .bg-secondary {
+    background-color: #494949 !important; /* fondo negro */
+    color: #FFFFFF !important;
+    font-family: 'Oswald', sans-serif !important;
+    padding: 3rem 3rem !important;
+    transition: box-shadow 0.3s ease;
   }
 
- .section-title-work {
-  font-size: 3rem;
-  font-weight: 800;
-  font-family: 'Oxanium', sans-serif;
-  background: linear-gradient(90deg, #fff200, #f0b80e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 6px rgba(255, 242, 0, 0.7);
-  margin-bottom: 4rem;
-  letter-spacing: 1.2px;
-}
 
-
-  .work-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 2000px;
-    margin: 0 auto;
-    gap: 2rem;
-
-  }
-
-  .work-card {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-    margin: 0 auto;
-    transform: translateY(40px);
-    opacity: 0;
-    transition:
-      transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
-      opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
-      box-shadow 0.3s ease,
-      transform 0.3s ease;
-  }
-
-  /* Cuando está visible */
-  .work-card.visible {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  /* Hover con zoom y sombra */
-  .work-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(240, 184, 14, 0.6);
-  }
-
-  .card-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(26, 26, 26, 0.92);
-    color: #fff;
-    opacity: 0;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-  }
-
-  /* Overlay animado al hacer hover */
-  .work-card:hover .card-overlay {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .card-overlay h3 {
-    font-size: 1.4rem;
-    color: #f0b80e;
-    margin-bottom: 0.5rem;
+  /* Etiqueta Price & Plan */
+  .price-plan-section .bg-dark.text-primary {
+    background-color: #FFD700 !important; /* amarillo */
+    color: #000000 !important;
+    font-family: 'Oswald', sans-serif !important;
+    padding: 0.25rem 1.5rem;
+    border-radius: 0; /* sin bordes redondeados */
+    display: inline-block;
     font-weight: 700;
-  }
-
-  .card-overlay p {
-    font-size: 0.95rem;
-    color: #ccc;
+    text-transform: uppercase;
     margin-bottom: 1rem;
+    letter-spacing: 0.05em;
   }
 
-  .btn-primary.small {
-    font-size: 0.85rem;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    background: #f0b80e;
-    border: none;
-    color: #1a1a1a;
-    cursor: pointer;
+  /* Título principal */
+  .price-plan-section h1.text-uppercase {
+    color: #FFD700 !important; /* amarillo */
     font-weight: 700;
-    transition: background-color 0.3s ease;
+    font-family: 'Oswald', sans-serif !important;
+    margin-bottom: 2rem;
   }
 
-  .btn-primary.small:hover {
-    background: #fff200;
+  /* Contenedor de precios */
+  .price-plan-section .d-flex.justify-content-between {
+    border-color: #FFD700 !important; /* bordes amarillo */
+    font-family: 'Oswald', sans-serif !important;
+  }
+
+  /* Nombres de servicios */
+  .price-plan-section .d-flex.justify-content-between h6.text-uppercase {
+    color: #FFFFFF !important;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif !important;
+  }
+
+  /* Precios */
+  .price-plan-section .d-flex.justify-content-between span.text-primary {
+    color: #FFD700 !important; /* amarillo */
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif !important;
   }
 </style>
 
-<section class="our-work-section">
-  <h2 class="section-title-work">Nuestros trabajos</h2>
-  <div class="work-cards">
-    <div class="work-card">
-      <div class="card-overlay">
-        <h3>Proyecto A</h3>
-        <p>Ilustración digital para campaña publicitaria.</p>
-        <button class="btn-primary small">Contactar</button>
+<!-- Price & Plan Section -->
+<div class="container-xxl py-5 price-plan-section">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+          <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Cursos</p>
+          <h1 class="text-uppercase mb-4">Nuestros Cursos de Arte Digital y Precios</h1>
+          <div>
+            <div class="d-flex justify-content-between border-bottom py-2">
+              <h6 class="text-uppercase mb-0">Diseño Gráfico con Photoshop</h6>
+              <span class="text-uppercase text-primary">$49.00</span>
+            </div>
+            <div class="d-flex justify-content-between border-bottom py-2">
+              <h6 class="text-uppercase mb-0">Ilustración Digital con Procreate</h6>
+              <span class="text-uppercase text-primary">$59.00</span>
+            </div>
+            <div class="d-flex justify-content-between border-bottom py-2">
+              <h6 class="text-uppercase mb-0">Modelado 3D en Blender</h6>
+              <span class="text-uppercase text-primary">$69.00</span>
+            </div>
+            <div class="d-flex justify-content-between border-bottom py-2">
+              <h6 class="text-uppercase mb-0">Edición de Video con Premiere Pro</h6>
+              <span class="text-uppercase text-primary">$55.00</span>
+            </div>
+            <div class="d-flex justify-content-between border-bottom py-2">
+              <h6 class="text-uppercase mb-0">Animación 2D y Motion Graphics</h6>
+              <span class="text-uppercase text-primary">$65.00</span>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <h6 class="text-uppercase mb-0">Arte Conceptual para Videojuegos</h6>
+              <span class="text-uppercase text-primary">$75.00</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="work-card" >
-      <div class="card-overlay">
-        <h3>Proyecto B</h3>
-        <p>Animación para video corporativo.</p>
-        <button class="btn-primary small">Contactar</button>
-      </div>
-    </div>
-    <div class="work-card" >
-      <div class="card-overlay">
-        <h3>Proyecto C</h3>
-        <p>Diseño de personajes para videojuego.</p>
-        <button class="btn-primary small">Contactar</button>
-      </div>
-    </div>
-    <div class="work-card" >
-      <div class="card-overlay">
-        <h3>Proyecto C</h3>
-        <p>Diseño de personajes para videojuego.</p>
-        <button class="btn-primary small">Contactar</button>
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+        <div class="h-100">
+          <img class="img-fluid h-100" src="img/price.jpg" alt="Cursos de Arte Digital">
+        </div>
       </div>
     </div>
   </div>
-</section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.work-card');
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.3
-    });
-
-    cards.forEach((card, index) => {
-      observer.observe(card);
-      // Opcional: retraso escalonado para que aparezcan uno a uno
-      card.style.transitionDelay = `${index * 0.2}s`;
-    });
-  });
-</script>
+</div>
