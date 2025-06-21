@@ -1,0 +1,32 @@
+:root {
+ /* Colores */
+  --color-primary: #f0b80e;      /* amarillo principal */
+  --color-primary-dark: #e4a700; /* amarillo oscuro */
+  --color-dark: #222222;          /* fondo oscuro */
+  --color-light: #f0b80e;         /* color claro para texto e iconos */
+  --color-white: #ffffff;         /* blanco */
+  /* Tipografía */
+  --font-base: 'Oswald', sans-serif !important;
+  --font-size-base: 15px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Espaciados */
+  --spacing-small: 5px;
+  --spacing-medium: 15px;
+  --spacing-large: 2.5rem;
+
+  /* Bordes */
+  --border-radius-none: 0;
+}
+
+/* Aplicación global */
+body {
+  background: rgba(0, 0, 0, 0.85);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Oswald', sans-serif !important;
+
+}
+

@@ -1,12 +1,4 @@
 <style>
-body {
-  background: rgba(0, 0, 0, 0.85);
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
- font-family: 'Oswald', sans-serif !important;
-
-}
 
 /* Divs para altura extra arriba y abajo */
 
@@ -14,16 +6,16 @@ body {
 
 .aboutus-lead {
   font-size: 1.15rem;
-  color: #fff !important;
+  color: var(--color-light) !important; /* color claro para texto e iconos */
 }
 
 .aboutus-experience-badge {
   width: 160px;
-  border-radius: 0; /* sin bordes redondeados */
-  background: #000; /* fondo negro */
-  color: #f0b80e; /* letras amarillas */
+  border-radius: var(--border-radius-none); /* sin bordes redondeados */
+  background: var(--color-dark); /* fondo oscuro */
+  color: var(--color-primary); /* letras amarillas */
   box-shadow: 0 8px 20px rgba(240, 184, 14, 0.6);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-base);
   position: absolute;
   bottom: -80px;
   right: 60%;
@@ -35,7 +27,7 @@ body {
 .aboutus-experience-badge h1 {
   font-size: 4rem;
   line-height: 1;
-  color: #f0b80e;
+  color: var(--color-primary);
   margin: 0;
 }
 
@@ -46,18 +38,18 @@ body {
 }
 
 .aboutus-text p {
-  color: #fff !important;
+  color: var( --color-white) !important;
   margin-bottom: 1rem;
 }
 
 .aboutus-badge-warning {
-  border-radius: 0 !important;
-  color: #000 !important;
-  background-color: #f0b80e !important; 
+  border-radius: var(--border-radius-none) !important;
+  color: var(--color-dark) !important;
+  background-color: var(--color-primary) !important;
 }
 
 .aboutus-img-fluid {
-  border-radius: 0;
+  border-radius: var(--border-radius-none);
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
   transition: transform 0.5s ease;
   max-width: 100%;
@@ -71,8 +63,8 @@ body {
 
 .aboutus-text h1,
 .aboutus-text h3 {
-  font-family: 'Oswald', sans-serif;
-  color: #f0b80e;
+  font-family: var(--font-base);
+  color: var(--color-primary);
   margin-top: 0;
 }
 
@@ -83,16 +75,16 @@ body {
     margin-top: 1.5rem;
     box-shadow: none;
     text-align: center;
-    border-radius: 0;
-    background: #000;
-    color: #f0b80e;
+    border-radius: var(--border-radius-none);
+    background: var(--color-dark);
+    color: var(--color-primary);
     right: auto;
     bottom: auto;
   }
 
   .aboutus-badge-warning {
-    border-radius: 0 !important;
-    color: #000 !important;
+    border-radius: var(--border-radius-none) !important;
+    color: var(--color-dark) !important;
   }
 
   .aboutus-position-relative:hover .aboutus-img-fluid {
@@ -124,6 +116,7 @@ body {
   animation-fill-mode: both;
   opacity: 1;
 }
+
 </style>
 
 <!-- Div arriba para altura extra -->

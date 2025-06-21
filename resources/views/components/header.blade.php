@@ -1,26 +1,12 @@
 <style>
-/* Colores personalizados */
-:root {
-    --gold: #f0b80e;
-    --gold-dark: #a57f0d;
-    --black: #000;
-}
-
-/*** Navbar General ***/
-.navbar {
-    background-color: var(--black) !important;
-      font-family: "Oswald", sans-serif;
-}
-
-/*** Links de Navegación ***/
 .navbar .navbar-nav .nav-link {
     position: relative;
     color: var(--gold);
     margin-right: 30px;
     padding: 40px 0;
-      font-family: "Oswald", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
     text-transform: uppercase;
     outline: none;
     transition: color 0.3s ease;
@@ -99,15 +85,17 @@
 /* Título dorado */
 .text-title {
     color: var(--gold);
+    font-family: var(--font-primary);
 }
 
 /* Botón personalizado dorado */
 .btn-gold {
     background-color: var(--gold);
     border: 2px solid var(--gold);
-    color: #000;
-    font-weight: bold;
+    color: var(--black);
+    font-weight: var(--font-weight-bold);
     transition: all 0.3s ease;
+    font-family: var(--font-primary);
 }
 
 .btn-gold:hover {
@@ -118,7 +106,7 @@
 </style>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+<nav class="navbar navbar-expand-lg  py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
     <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
         <h1 class="mb-0 text-title text-uppercase"><i class="fa fa-cut me-3"></i>UAS</h1>
     </a>
