@@ -18,7 +18,7 @@
   font-family: var(--font-base);
   position: absolute;
   bottom: -80px;
-  right: 60%;
+  right: 80%;
   text-align: center;
   padding: 1rem;
   z-index: 10;
@@ -129,7 +129,7 @@
 
       <!-- Imagen con cuadro experiencia -->
       <div class="col-lg-6 aboutus-wow-fadein aboutus-position-relative d-flex flex-column align-items-end" data-wow-delay="0.1s" style="position: relative;">
-        <img class="aboutus-img-fluid w-75 shadow-lg" src="images/hero/hero.png" alt="Imagen Principal">
+        <img class="aboutus-img-fluid w-100 shadow-lg" src="{{ asset('images/section-2/section-2.jpg') }}" alt="Imagen Principal">
         <div class="aboutus-experience-badge shadow-lg position-absolute">
           <h1 class="display-4 fw-bold mb-1">25</h1>
           <h3 class="text-uppercase fw-semibold mb-0">Años<br>de Experiencia</h3>

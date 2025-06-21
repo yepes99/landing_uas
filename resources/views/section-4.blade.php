@@ -20,6 +20,13 @@
   letter-spacing: 0.05em;
 }
 
+.price-plan-section .col-lg-6 img.img-fluid {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* opcional: para recortar si la imagen no tiene el mismo ratio que el contenedor */
+}
+
+
 .price-plan-section h1.text-uppercase {
   color: var(--color-primary) !important;
   font-weight: 700;
@@ -83,7 +90,7 @@
       </div>
       <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
         <div class="h-100">
-          <img class="img-fluid h-100" src="img/price.jpg" alt="Cursos de Arte Digital">
+          <img class="img-fluid h-100" src="{{ asset('images/section-4/section-4.jpg') }}" alt="Cursos de Arte Digital">
         </div>
       </div>
     </div>

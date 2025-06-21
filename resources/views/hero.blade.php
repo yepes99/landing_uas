@@ -1,22 +1,38 @@
 <style>
+/* carousel.css */
+
 /* Fuente principal del carrusel */
 #header-carousel {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--font-base);
 }
 
-/* Fondo oscuro translúcido para las captions */
+/* Contenedor de caption más compacto y centrado verticalmente */
 .carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.85);
-    padding: 3rem 2rem;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 0.5rem;
+    max-width: 900px;
     z-index: 1;
+    color: #fff;
+    text-align: left;
+    border-radius: 0; /* opcional */
 }
 
-/* Títulos grandes con efecto degradado dorado */
-.carousel-caption h1,
+/* El contenedor interno no necesita border rojo, lo quito */
+.carousel-caption-info {
+    /* Puedes añadir padding si quieres */
+}
+
+#header-carousel .carousel-item img {
+    max-height: 800px; /* Ajusta según tu diseño */
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+
 .carousel-caption h2 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -28,21 +44,18 @@
     text-shadow: 0 0 20px rgba(255, 242, 0, 0.4);
 }
 
-/* Subtítulo */
-.carousel-caption h4,
-.carousel-caption p.h4 {
+.carousel-caption .subtitle {
     font-size: 1.5rem;
     font-weight: 400;
     color: #fff;
+    margin-bottom: 1rem;
 }
 
-/* Estilo para íconos dorados */
 .icon-gold {
     color: #f0b80e;
     font-size: 1.3em;
 }
 
-/* Botón personalizado con estilo dorado */
 .btn-gold {
     background: linear-gradient(90deg, #fff200, #f0b80e);
     color: #000;
@@ -52,6 +65,7 @@
     text-transform: uppercase;
     box-shadow: 0 0 15px rgba(255, 242, 0, 0.4);
     transition: all 0.3s ease-in-out;
+    font-size: 1rem;
 }
 
 .btn-gold:hover {
@@ -60,7 +74,6 @@
     box-shadow: 0 0 25px rgba(255, 242, 0, 0.7);
 }
 
-/* Estilos para botones de control del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
     width: 60px;
@@ -81,7 +94,6 @@
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Elimina los íconos por defecto */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none;
@@ -91,7 +103,6 @@
     fill: white;
 }
 
-/* Ícono SVG flecha izquierda */
 .carousel-control-prev-icon::after {
     content: '';
     display: inline-block;
@@ -100,7 +111,6 @@
     background: url("data:image/svg+xml,%3csvg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath d='M11 1L5 8l6 7' stroke='white' stroke-width='2' fill='none'/%3e%3c/svg%3e") no-repeat center center;
 }
 
-/* Ícono SVG flecha derecha */
 .carousel-control-next-icon::after {
     content: '';
     display: inline-block;
@@ -109,7 +119,7 @@
     background: url("data:image/svg+xml,%3csvg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath d='M5 1l6 7-6 7' stroke='white' stroke-width='2' fill='none'/%3e%3c/svg%3e") no-repeat center center;
 }
 
-/* Responsive: ajustes para móviles */
+/* Responsive */
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
@@ -123,13 +133,19 @@
         object-fit: cover;
     }
 
-    .carousel-caption h1,
+    .carousel-caption {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem 1.5rem;
+        max-width: 90%;
+    }
+
     .carousel-caption h2 {
         font-size: 2.2rem;
     }
 
-    .carousel-caption h4,
-    .carousel-caption p.h4 {
+    .carousel-caption .subtitle {
         font-size: 1.1rem;
     }
 
@@ -138,45 +154,48 @@
         padding: 0.6rem 1.2rem;
     }
 }
+
+
 </style>
 
-<!-- Carousel Start -->
-<section class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s" aria-label="Carrusel de promoción del curso">
+
+<section class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s" aria-label="Carrusel de promoción del curso de arte digital" role="region">
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
+
+           <!-- Slide 1 -->
             <div class="carousel-item active">
-                <img class="w-100" src="img/carousel-1.jpg" alt="Curso online de arte digital en vivo y grabado">
-                <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
-                    <div class="mx-sm-5 px-5" style="max-width: 900px;">
-                        <h1 class="display-2 text-uppercase mb-4 animated slideInDown">Domina el Arte Digital desde Cero</h1>
-                        <p class="h4 text-uppercase mb-4 animated slideInDown">
-                            <i class="fa-solid fa-laptop me-3 icon-gold"></i>Clases Online en Vivo y Grabadas
-                        </p>
-                        <p class="h4 text-uppercase mb-4 animated slideInDown">
-                            <i class="fa-solid fa-clock me-3 icon-gold"></i>Acceso 24/7 a la Plataforma
-                        </p>
-                        <a href="#contacto" class="btn btn-gold mt-3 animated fadeInUp" aria-label="Inscribirse al curso">Inscríbete Ahora</a>
-                    </div>
+                <img class="w-100" src="{{ asset('images/hero/hero_carusel_1.jpg') }}" alt="Clases online de arte digital para principiantes y avanzados">
+                <div class="carousel-caption">
+                    <h2 class="text-uppercase mb-4">Domina el arte digital desde cero</h2>
+                    <p class="subtitle text-uppercase mb-4">
+                        <i class="fa-solid fa-laptop me-3 icon-gold" aria-hidden="true"></i>Clases online en vivo y grabadas
+                    </p>
+                    <p class="subtitle text-uppercase mb-4">
+                        <i class="fa-solid fa-clock me-3 icon-gold" aria-hidden="true"></i>Acceso 24/7 a la plataforma
+                    </p>
+                    <a href="#contacto" class="btn btn-gold mt-3" aria-label="Inscribirse al curso de arte digital">Inscríbete ahora</a>
                 </div>
             </div>
+
+            <!-- Slide 2 -->
             <div class="carousel-item">
-                <img class="w-100" src="img/carousel-2.jpg" alt="Formación profesional en diseño digital con certificación">
-                <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
-                    <div class="mx-sm-5 px-5" style="max-width: 900px;">
-                        <h2 class="display-2 text-uppercase mb-4 animated slideInDown">Conviértete en Artista Digital Profesional</h2>
-                        <p class="h4 text-uppercase mb-4 animated slideInDown">
-                            <i class="fa-solid fa-user-graduate me-3 icon-gold"></i>Mentores con Experiencia Real
-                        </p>
-                        <p class="h4 text-uppercase mb-4 animated slideInDown">
-                            <i class="fa-solid fa-certificate me-3 icon-gold"></i>Certificación al Finalizar
-                        </p>
-                        <a href="#contacto" class="btn btn-gold mt-3 animated fadeInUp" aria-label="Comenzar curso de arte digital">Comienza Hoy</a>
-                    </div>
+                <img class="w-100" src="{{ asset('images/hero/hero_carusel_2.jpg') }}" alt="Curso profesional de arte digital con mentores y certificado final">
+                <div class="carousel-caption">
+                    <h2 class="text-uppercase mb-4">Conviértete en artista digital profesional</h2>
+                    <p class="subtitle text-uppercase mb-4">
+                        <i class="fa-solid fa-user-graduate me-3 icon-gold" aria-hidden="true"></i>Mentores con experiencia real
+                    </p>
+                    <p class="subtitle text-uppercase mb-4">
+                        <i class="fa-solid fa-certificate me-3 icon-gold" aria-hidden="true"></i>Certificación al finalizar
+                    </p>
+                    <a href="#contacto" class="btn btn-gold mt-3" aria-label="Comenzar curso de arte digital certificado">Comienza hoy</a>
                 </div>
             </div>
+
         </div>
 
-        <!-- Botones de control accesibles -->
+        <!-- Controles accesibles -->
         <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev" aria-label="Anterior">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
@@ -185,5 +204,3 @@
         </button>
     </div>
 </section>
-
-<!-- Carousel End -->
