@@ -1,6 +1,6 @@
 
 <!-- Horario del Curso de Arte Digital Start -->
-<div class="container-xxl py-5">
+<section class="container-xxl py-5">
   <div class="container">
     <div class="row g-0">
       <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -11,7 +11,7 @@
       <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
         <div class="course-schedule-container">
           <p class="schedule-badge">HORARIO DEL CURSO</p>
-          <h1 class="schedule-title">Profesores Expertos Te Esperan</h1>
+          <h2 class="schedule-title">Profesores Expertos Te Esperan</h2>
           <div>
             <div class="schedule-row border-bottom">
               <h6 class="schedule-day">Lunes</h6>
@@ -42,6 +42,6 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- Horario del Curso de Arte Digital End -->
 

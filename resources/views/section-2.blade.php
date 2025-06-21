@@ -1,6 +1,6 @@
 
 <!-- About Start -->
-<div id="sobre-nosotros" class="container-fluid py-5 aboutus-container">
+<section id="sobre-nosotros" class="container-fluid py-5 aboutus-container">
   <div class="container">
     <div class="row g-5 align-items-center">
 
@@ -34,7 +34,7 @@
 
     </div>
   </div>
-</div>
+</section>
 <!-- About End -->
 
 <!-- Div abajo para altura extra -->

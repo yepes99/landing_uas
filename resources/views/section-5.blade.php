@@ -1,18 +1,10 @@
-<!-- Incluye en el <head> esta fuente de Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
-
-<style>
-
-</style>
 
 <!-- Team Start -->
-<div id="nuestro-equipo" class="container-xxl py-5 team-section">
+<section id="nuestro-equipo" class="container-xxl py-5 team-section">
   <div class="container">
     <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
       <p class="d-inline-block bg-secondary text-primary py-1 px-4">NUESTRO EQUIPO</p>
-      <h1 class="text-uppercase">Conoce a Nuestro Equipo Creativo</h1>
-
-
+      <h2 class="text-uppercase">Conoce a Nuestro Equipo Creativo</h2>
       <!-- Texto añadido -->
       <p class="course-text">
         Descubre las técnicas y herramientas más avanzadas del arte digital en nuestro curso especializado. Aprende a crear ilustraciones, diseños y animaciones digitales desde cero, con proyectos prácticos que potenciarán tu creatividad y habilidades técnicas. Perfecto para artistas, diseñadores y entusiastas que quieren llevar su talento al siguiente nivel.
@@ -86,5 +78,5 @@
 </div>
 
   </div>
-</div>
+</section>
 <!-- Team End -->
