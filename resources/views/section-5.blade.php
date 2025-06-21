@@ -38,11 +38,12 @@
   top: 0;
   bottom: 0;
   width: 0;
-  background-color: rgba(78, 78, 77, 0.6);
+  background-color: rgba(78, 78, 77, 0.15); /* Más transparente */
   transition: width 0.4s ease;
   z-index: 1;
   pointer-events: none;
 }
+
 
 /* Pseudo-elemento izquierdo */
 .team-section .team-img::before {
