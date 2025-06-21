@@ -90,7 +90,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg  py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
     <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <h1 class="mb-0 text-title text-uppercase"><i class="fa fa-cut me-3"></i>UAS</h1>
+       <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="me-3" style="height: 80px;">
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -103,8 +103,8 @@
             <a href="#nuestro-equipo" class="nav-item nav-link">nuestro equipo</a>
             <a href="#contacto" class="nav-item nav-link">Contacto</a>
         </div>
-        <a href="#" class="btn btn-gold rounded-0 py-2 px-lg-4 d-none d-lg-block">
-            Appointment <i class="fa fa-arrow-right ms-3"></i>
+        <a  href="#contacto" class="btn btn-gold rounded-0 py-2 px-lg-4 d-none d-lg-block">
+            Contáctanos <i class="fa fa-arrow-right ms-3"></i>
         </a>
     </div>
 </nav>

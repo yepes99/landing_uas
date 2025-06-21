@@ -143,7 +143,7 @@ form.contact-form textarea {
 
  
 
- <section class="contact-section">
+ <section id="contacto" class="contact-section">
   <h2 class="section-title">Contacto</h2>
   <div class="contact-wrapper">
 
