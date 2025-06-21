@@ -1,107 +1,101 @@
 <style>
+.navbar {
+  background: rgba(15, 15, 15, 0.5); /* negro semitransparente */
+  backdrop-filter: var(--glass-effect);
+  -webkit-backdrop-filter: var(--glass-effect);
+  box-shadow: var(--neon-shadow);
+  transition: var(--transition-normal);
+}
+
+.navbar h1{
+    color: var(--color-primary);
+}
+
+/* Links */
 .navbar .navbar-nav .nav-link {
-    position: relative;
-    color: var(--gold);
-    margin-right: 30px;
-    padding: 40px 0;
-    font-family: var(--font-primary);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    text-transform: uppercase;
-    outline: none;
-    transition: color 0.3s ease;
+  position: relative;
+  color: var(--color-white);
+  margin-right: 30px;
+  padding: 40px 0;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  outline: none;
+  transition: color 0.3s ease;
 }
 
 /* Línea debajo en hover */
 .navbar .navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 30px;
-    width: 0;
-    height: 2px;
-    background-color: var(--gold);
-    transition: width 0.3s ease;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
 }
 
 .navbar .navbar-nav .nav-link:hover::after,
 .navbar .navbar-nav .nav-link.active::after {
-    width: 100%;
+  width: 100%;
 }
 
 /* Hover color texto */
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--gold-dark);
+  color: var(--color-primary);
 }
 
 /* Ícono del dropdown personalizado */
 .navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
-}
-
-/* Dropdown visible al pasar el mouse (solo escritorio) */
-@media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .navbar.shadow-sm .navbar-nav .nav-link {
-        padding: 20px 0;
-    }
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+  color: var(--color-primary);
 }
 
 /* Responsive ajustes para móviles */
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link,
-    .navbar.shadow-sm .navbar-nav .nav-link {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-
-    .navbar .navbar-nav {
-        margin-top: 8px;
-        border-top: 1px solid var(--gold);
-    }
+  .navbar .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+  .navbar .navbar-nav {
+    margin-top: 8px;
+    border-top: 1px solid var(--color-primary);
+  }
 }
 
-/* Título dorado */
+/* Título dorado con variable */
 .text-title {
-    color: var(--gold);
-    font-family: var(--font-primary);
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+}
+
+/* Ícono amarillo dentro del título */
+.text-title i {
+  color: var(--color-primary);
 }
 
 /* Botón personalizado dorado */
 .btn-gold {
-    background-color: var(--gold);
-    border: 2px solid var(--gold);
-    color: var(--black);
-    font-weight: var(--font-weight-bold);
-    transition: all 0.3s ease;
-    font-family: var(--font-primary);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  color: black;
+  font-weight: var(--font-weight-bold);
+  transition: all 0.3s ease;
+  font-family: var(--font-primary);
 }
 
 .btn-gold:hover {
-    background-color: transparent;
-    color: var(--gold);
-    border-color: var(--gold);
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 </style>
 

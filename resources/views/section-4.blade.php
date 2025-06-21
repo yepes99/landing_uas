@@ -1,55 +1,48 @@
 <style>
-  /* Estilo general para la sección Price & Plan */
-  .price-plan-section .bg-secondary {
-    background-color: #494949 !important; /* fondo negro */
-    color: #FFFFFF !important;
-    font-family: 'Oswald', sans-serif !important;
-    padding: 3rem 3rem !important;
-    transition: box-shadow 0.3s ease;
-  }
+.price-plan-section .bg-secondary {
+  background-color: var(--color-dark) !important;
+  color: var(--color-white) !important;
+  font-family: var(--font-oswald) !important;
+  padding: 3rem 3rem !important;
+  transition: box-shadow 0.3s ease;
+}
 
+.price-plan-section .bg-dark.text-primary {
+  background-color: var(--color-primary) !important;
+  color: #000000 !important;
+  font-family: var(--font-oswald) !important;
+  padding: 0.25rem 1.5rem;
+  border-radius: 0;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
 
-  /* Etiqueta Price & Plan */
-  .price-plan-section .bg-dark.text-primary {
-    background-color: #FFD700 !important; /* amarillo */
-    color: #000000 !important;
-    font-family: 'Oswald', sans-serif !important;
-    padding: 0.25rem 1.5rem;
-    border-radius: 0; /* sin bordes redondeados */
-    display: inline-block;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    letter-spacing: 0.05em;
-  }
+.price-plan-section h1.text-uppercase {
+  color: var(--color-primary) !important;
+  font-weight: 700;
+  font-family: var(--font-oswald) !important;
+  margin-bottom: 2rem;
+}
 
-  /* Título principal */
-  .price-plan-section h1.text-uppercase {
-    color: #FFD700 !important; /* amarillo */
-    font-weight: 700;
-    font-family: 'Oswald', sans-serif !important;
-    margin-bottom: 2rem;
-  }
+.price-plan-section .d-flex.justify-content-between {
+  border-color: var(--color-primary) !important;
+  font-family: var(--font-oswald) !important;
+}
 
-  /* Contenedor de precios */
-  .price-plan-section .d-flex.justify-content-between {
-    border-color: #FFD700 !important; /* bordes amarillo */
-    font-family: 'Oswald', sans-serif !important;
-  }
+.price-plan-section .d-flex.justify-content-between h6.text-uppercase {
+  color: var(--color-white) !important;
+  font-weight: 600;
+  font-family: var(--font-oswald) !important;
+}
 
-  /* Nombres de servicios */
-  .price-plan-section .d-flex.justify-content-between h6.text-uppercase {
-    color: #FFFFFF !important;
-    font-weight: 600;
-    font-family: 'Oswald', sans-serif !important;
-  }
-
-  /* Precios */
-  .price-plan-section .d-flex.justify-content-between span.text-primary {
-    color: #FFD700 !important; /* amarillo */
-    font-weight: 700;
-    font-family: 'Oswald', sans-serif !important;
-  }
+.price-plan-section .d-flex.justify-content-between span.text-primary {
+  color: var(--color-primary) !important;
+  font-weight: 700;
+  font-family: var(--font-oswald) !important;
+}
 </style>
 
 <!-- Price & Plan Section -->

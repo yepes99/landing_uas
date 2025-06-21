@@ -1,89 +1,89 @@
 <style>
   /*** Service Section ***/
-  .service-item {
-    background-color: #0f0f0f !important;
-    color: #FFFFFF;
-    font-family: 'Oswald', sans-serif;
-   
-  }
-  .service-item:hover{
-       box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6);
-  }
+.service-item {
+  background-color: var(--color-dark) !important;
+  color: var(--color-white);
+  font-family: 'Oswald', sans-serif;
+}
 
-  .service-item h3 {
-    color: #FFFFFF !important;
-  }
+.service-item:hover {
+  box-shadow: 0 4px 15px rgba(240, 184, 14, 0.6); /* rgba del amarillo principal */
+}
 
-  .service-item p {
-    color: #FFFFFF !important;
-  }
+.service-item h3 {
+  color: var(--color-white) !important;
+}
 
-  .service-item span {
-    color: #FFD700 !important;
-  }
+.service-item p {
+  color: var(--color-white) !important;
+}
 
-  .service-item .btn {
-    position: absolute;
-    right: -50px;
-    bottom: -50px;
-    width: 50px;
-    height: 50px;
-    background: #FFD700;
-    color: #000000;
-    border-radius: 0;
-    border: none;
-    opacity: 0;
-    transition: 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.service-item span {
+  color: var(--color-primary) !important;
+}
 
-  .service-item .btn i {
-    color: #000000;
-    font-size: 18px;
-  }
+.service-item .btn {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  color: var(--color-dark);
+  border-radius: 0;
+  border: none;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .service-item:hover .btn {
-    right: 0;
-    bottom: 0;
-    opacity: 1;
-  }
+.service-item .btn i {
+  color: var(--color-dark);
+  font-size: 18px;
+}
 
-  .service-item .btn:hover {
-    background-color: #000000;
-    color: #FFD700;
-  }
+.service-item:hover .btn {
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
 
-  .service-item .btn:hover i {
-    color: #FFD700;
-  }
+.service-item .btn:hover {
+  background-color: var(--color-dark);
+  color: var(--color-primary);
+}
 
-  .service-item .bg-dark {
-    background-color: #FFD700 !important;
-  }
+.service-item .btn:hover i {
+  color: var(--color-primary);
+}
 
-  .service-item .bg-dark i {
-    font-size: 28px;
-    color: #000000;
-  }
+.service-item .bg-dark {
+  background-color: var(--color-primary) !important;
+}
 
-  /* Estilos reutilizables */
-  .text-yellow {
-    color: #FFD700 !important;
-  }
+.service-item .bg-dark i {
+  font-size: 28px;
+  color: var(--color-dark);
+}
 
-  .bg-yellow {
-    background-color: #FFD700 !important;
-  }
+/* Estilos reutilizables */
+.text-yellow {
+  color: var(--color-primary) !important;
+}
 
-  .text-black {
-    color: #000000 !important;
-  }
+.bg-yellow {
+  background-color: var(--color-primary) !important;
+}
 
-  .bg-black {
-    background-color: #000000 !important;
-  }
+.text-black {
+  color: var(--color-dark) !important;
+}
+
+.bg-black {
+  background-color: var(--color-dark) !important;
+}
 </style>
 
 <!-- Service Start -->

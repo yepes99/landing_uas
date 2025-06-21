@@ -2,18 +2,18 @@
 <style>
       
 .contact-section {
-  color: #fff;
+  color: var(--color-white);
   padding: 5rem 1.5rem;
   text-align: center;
-  background: linear-gradient(135deg, #1a1a1a, #222222);
-  font-family: 'Oswald', sans-serif !important;
+  background: linear-gradient(135deg, #1a1a1a, var(--color-dark));
+  font-family: var(--font-base);
 }
 
 .section-title {
-  color: #f0b80e;
+  color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   margin-bottom: 2.5rem;
   font-size: 2.5rem;
   text-shadow: 
@@ -39,7 +39,7 @@
   padding: 2rem;
   transition: box-shadow 0.4s ease;
   cursor: default;
-  border-radius: 0; /* Sin bordes redondeados */
+  border-radius: 0;
 }
 
 .contact-column:hover {
@@ -50,8 +50,8 @@
 .contact-column h3 {
   font-size: 1.8rem;
   margin-bottom: 1.8rem;
-  color: #f0b80e;
-  font-weight: 700;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-shadow: 0 0 6px #f0b80e80;
@@ -74,21 +74,20 @@
 }
 
 .contact-info i {
-  color: #f0b80e;
+  color: var(--color-primary);
   font-size: 1.2rem;
   width: 22px;
   flex-shrink: 0;
-
 }
 
 .contact-info a {
-  color: #f0b80e;
+  color: var(--color-primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: underline;
 }
 
@@ -99,13 +98,13 @@
 .social-icons a {
   margin-right: 1.2rem;
   font-size: 1.5rem;
-  color: #f0b80e;
+  color: var(--color-primary);
   transition: color 0.4s ease;
   display: inline-block;
 }
 
 .social-icons a:hover {
-  color: #fff;
+  color: var(--color-white);
 }
 
 form.contact-form {
@@ -132,8 +131,8 @@ form.contact-form input:focus,
 form.contact-form textarea:focus {
   outline: none;
   background: #282828;
-  box-shadow: 0 0 10px #f0b80e;
-  color: #fff;
+  box-shadow: 0 0 10px var(--color-primary);
+  color: var(--color-white);
 }
 
 form.contact-form textarea {
@@ -143,9 +142,9 @@ form.contact-form textarea {
 .btn-glow {
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   color: #000;
-  background: #f0b80e;
+  background: var(--color-primary);
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -156,10 +155,9 @@ form.contact-form textarea {
 }
 
 .btn-glow:hover {
-  background: #e4a700;
+  background: var(--color-primary-dark);
   box-shadow: none;
 }
-
 
 </style>
 

@@ -1,6 +1,6 @@
 <style>
-    .course-schedule-container {
-  background-color: #121212; /* negro oscuro */
+.course-schedule-container {
+  background-color: var(--color-dark); /* fondo oscuro */
   height: 100%;
   padding: 2rem 3rem;
   display: flex;
@@ -10,18 +10,16 @@
 
 .schedule-badge {
   display: inline-flex;
-  background-color: #FFD700; /* amarillo */
+  background-color: var(--color-primary); /* amarillo principal */
   max-width: 30%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0.5 1rem;
-
+  padding: 0.5rem 1rem;
 }
 
-
 .schedule-title {
-  color: #FFD700; 
+  color: var(--color-primary);
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -31,13 +29,13 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
-  color: #FFD700;
+  color: var(--color-primary);
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #FFD700;
+  border-bottom: 1px solid var(--color-primary);
 }
 
 .schedule-day {
@@ -49,9 +47,10 @@
 }
 
 .schedule-closed {
-  color: #FFC107; /* amarillo un poco más suave */
+  color: #FFC107; /* amarillo un poco más suave, no está en variables */
   font-weight: 700;
 }
+
 
 </style>
 
