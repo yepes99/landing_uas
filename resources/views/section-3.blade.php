@@ -1,148 +1,189 @@
 <style>
-  .services-section {
-    padding: 8rem 2rem; /* Más alto */
-    text-align: center;
-    color: #fff;
-    background-size: 40px 40px;
+  /*** Service Section ***/
+  .service-item {
+    background-color: #0f0f0f !important;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+   
+  }
+  .service-item:hover{
+       box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6);
   }
 
-  .services-section .section-title-service {
-    font-size: 3rem;
-    font-weight: 800;
-    font-family: 'Oxanium', sans-serif;
-    background: linear-gradient(90deg, #fff200, #f0b80e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 6px rgba(255, 242, 0, 0.7);
-    margin-bottom: 4rem;
-    letter-spacing: 1.2px;
+  .service-item h3 {
+    color: #FFFFFF !important;
   }
 
-  .services-cards {
+  .service-item p {
+    color: #FFFFFF !important;
+  }
+
+  .service-item span {
+    color: #FFD700 !important;
+  }
+
+  .service-item .btn {
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: #FFD700;
+    color: #000000;
+    border-radius: 0;
+    border: none;
+    opacity: 0;
+    transition: 0.5s;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.5rem;
-  }
-
-  .service-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(240, 184, 14, 0.08);
-    border-radius: 0; /* Sin bordes redondeados */
-    padding: 2.5rem;
-    width: 100%;
-    max-width: 360px;
-    text-align: left;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 2px 10px rgba(240, 184, 14, 0.1); /* sombra más suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0;             /* Inicialmente invisible */
-    transform: translateY(40px); /* Desplazado hacia abajo */
-  }
-
-  /* Estado activo cuando está visible */
-  .service-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-
-  .service-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 24px rgba(240, 184, 14, 0.18);
-  }
-
-  .icon-wrapper {
-    background-color: rgba(240, 184, 14, 0.07);
-    color: #f0b80e;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 0; /* sin redondear */
+  }
+
+  .service-item .btn i {
+    color: #000000;
     font-size: 18px;
-    margin-bottom: 1.2rem;
   }
 
-  .service-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.7rem;
-    color: #fff;
-    font-weight: 600;
+  .service-item:hover .btn {
+    right: 0;
+    bottom: 0;
+    opacity: 1;
   }
 
-  .service-card p {
-    font-size: 1rem;
-    color: #ddd;
-    line-height: 1.6;
-    margin-bottom: 1.2rem;
+  .service-item .btn:hover {
+    background-color: #000000;
+    color: #FFD700;
   }
 
-  .service-card a {
-    font-size: 0.95rem;
-    color: #f0b80e;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: 600;
-    transition: color 0.3s ease;
+  .service-item .btn:hover i {
+    color: #FFD700;
   }
 
-  .service-card a:hover {
-    text-decoration: underline;
-    color: #fff200;
+  .service-item .bg-dark {
+    background-color: #FFD700 !important;
+  }
+
+  .service-item .bg-dark i {
+    font-size: 28px;
+    color: #000000;
+  }
+
+  /* Estilos reutilizables */
+  .text-yellow {
+    color: #FFD700 !important;
+  }
+
+  .bg-yellow {
+    background-color: #FFD700 !important;
+  }
+
+  .text-black {
+    color: #000000 !important;
+  }
+
+  .bg-black {
+    background-color: #000000 !important;
   }
 </style>
 
-<section class="services-section">
-  <h2 class="section-title-service">Servicios</h2>
-  <div class="services-cards">
-    <div class="service-card">
-      <div class="icon-wrapper">
-        <i class="fas fa-paint-brush"></i>
-      </div>
-      <h3>Diseño gráfico</h3>
-      <p>Creación de ilustraciones, logos y material visual para tu marca.</p>
-      <a href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+<!-- Service Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+      <p class="d-inline-block bg-black text-yellow py-1 px-4">Cursos</p>
+      <h1 class="text-uppercase text-yellow">¿Qué ofrecemos en arte digital?</h1>
     </div>
-    <div class="service-card">
-      <div class="icon-wrapper">
-        <i class="fas fa-video"></i>
+    <div class="row g-4">
+      <!-- Diseño Gráfico -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+          <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+            <i class="fas fa-paint-brush fa-2x text-black"></i>
+          </div>
+          <div class="ps-4">
+            <h3 class="text-uppercase mb-3">Diseño Gráfico</h3>
+            <p>Aprende a crear piezas visuales impactantes con Photoshop e Illustrator desde cero.</p>
+            <span class="text-uppercase">Desde $49</span>
+          </div>
+          <a class="btn btn-square" href=""><i class="fa fa-plus"></i></a>
+        </div>
       </div>
-      <h3>Animación 2D</h3>
-      <p>Producción de animaciones para videos explicativos y publicidad.</p>
-      <a href="#">Ver más <i class="fas fa-arrow-right"></i></a>
-    </div>
-    <div class="service-card">
-      <div class="icon-wrapper">
-        <i class="fas fa-camera-retro"></i>
+
+      <!-- Ilustración Digital -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+          <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+            <i class="fas fa-pen-nib fa-2x text-black"></i>
+          </div>
+          <div class="ps-4">
+            <h3 class="text-uppercase mb-3">Ilustración Digital</h3>
+            <p>Domina Procreate y otras herramientas para crear personajes y entornos únicos.</p>
+            <span class="text-uppercase">Desde $59</span>
+          </div>
+          <a class="btn btn-square" href=""><i class="fa fa-plus"></i></a>
+        </div>
       </div>
-      <h3>Edición de video</h3>
-      <p>Montaje y postproducción para proyectos audiovisuales.</p>
-      <a href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+
+      <!-- Modelado 3D -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+          <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+            <i class="fas fa-cube fa-2x text-black"></i>
+          </div>
+          <div class="ps-4">
+            <h3 class="text-uppercase mb-3">Modelado 3D</h3>
+            <p>Crea objetos y escenarios en Blender y ZBrush para videojuegos y animación.</p>
+            <span class="text-uppercase">Desde $69</span>
+          </div>
+          <a class="btn btn-square" href=""><i class="fa fa-plus"></i></a>
+        </div>
+      </div>
+
+      <!-- Edición de Video -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+          <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+            <i class="fas fa-video fa-2x text-black"></i>
+          </div>
+          <div class="ps-4">
+            <h3 class="text-uppercase mb-3">Edición de Video</h3>
+            <p>Aprende Premiere Pro y After Effects para producir contenido visual profesional.</p>
+            <span class="text-uppercase">Desde $55</span>
+          </div>
+          <a class="btn btn-square" href=""><i class="fa fa-plus"></i></a>
+        </div>
+      </div>
+
+      <!-- Animación 2D -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+          <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+            <i class="fas fa-film fa-2x text-black"></i>
+          </div>
+          <div class="ps-4">
+            <h3 class="text-uppercase mb-3">Animación 2D</h3>
+            <p>Domina la animación cuadro a cuadro y motion graphics con herramientas actuales.</p>
+            <span class="text-uppercase">Desde $65</span>
+          </div>
+          <a class="btn btn-square" href=""><i class="fa fa-plus"></i></a>
+        </div>
+      </div>
+
+      <!-- Arte Conceptual -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+          <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+            <i class="fas fa-lightbulb fa-2x text-black"></i>
+          </div>
+          <div class="ps-4">
+            <h3 class="text-uppercase mb-3">Arte Conceptual</h3>
+            <p>Diseña mundos, personajes y criaturas para videojuegos, cine y narrativa visual.</p>
+            <span class="text-uppercase">Desde $75</span>
+          </div>
+          <a class="btn btn-square" href=""><i class="fa fa-plus"></i></a>
+        </div>
+      </div>
     </div>
   </div>
-</section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.service-card');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.2
-    });
-
-    cards.forEach(card => {
-      observer.observe(card);
-    });
-  });
-</script>
+</div>
+<!-- Service End -->

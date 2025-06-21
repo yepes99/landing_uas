@@ -4,6 +4,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+      font-family: 'Oswald', sans-serif !important;
+
 }
 
 /* Divs para altura extra arriba y abajo */
