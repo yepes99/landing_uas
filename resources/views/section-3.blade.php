@@ -1,93 +1,93 @@
 <style>
-  /*** Service Section ***/
-.service-item {
-  background-color: var(--color-dark) !important;
-  color: var(--color-white);
-  font-family: 'Oswald', sans-serif;
-}
+    .service-section .service-item {
+    background-color: var(--color-dark) !important;
+    color: var(--color-white);
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+  }
 
-.service-item:hover {
-  box-shadow: 0 4px 15px rgba(240, 184, 14, 0.6); /* rgba del amarillo principal */
-}
+  .service-section .service-item:hover {
+    box-shadow: 0 4px 15px rgba(240, 184, 14, 0.6); /* rgba del amarillo principal */
+  }
 
-.service-item h3 {
-  color: var(--color-white) !important;
-}
+  .service-section .service-item h3 {
+    color: var(--color-white) !important;
+  }
 
-.service-item p {
-  color: var(--color-white) !important;
-}
+  .service-section .service-item p {
+    color: var(--color-white) !important;
+  }
 
-.service-item span {
-  color: var(--color-primary) !important;
-}
+  .service-section .service-item span {
+    color: var(--color-primary) !important;
+  }
 
-.service-item .btn {
-  position: absolute;
-  right: -50px;
-  bottom: -50px;
-  width: 50px;
-  height: 50px;
-  background: var(--color-primary);
-  color: var(--color-dark);
-  border-radius: 0;
-  border: none;
-  opacity: 0;
-  transition: 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .service-section .service-item .btn {
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    color: var(--color-dark);
+    border-radius: 0;
+    border: none;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.service-item .btn i {
-  color: var(--color-dark);
-  font-size: 18px;
-}
+  .service-section .service-item .btn i {
+    color: var(--color-dark);
+    font-size: 18px;
+  }
 
-.service-item:hover .btn {
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
+  .service-section .service-item:hover .btn {
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
 
-.service-item .btn:hover {
-  background-color: var(--color-dark);
-  color: var(--color-primary);
-}
+  .service-section .service-item .btn:hover {
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+  }
 
-.service-item .btn:hover i {
-  color: var(--color-primary);
-}
+  .service-section .service-item .btn:hover i {
+    color: var(--color-primary);
+  }
 
-.service-item .bg-dark {
-  background-color: var(--color-primary) !important;
-}
+  .service-section .service-item .bg-dark {
+    background-color: var(--color-primary) !important;
+  }
 
-.service-item .bg-dark i {
-  font-size: 28px;
-  color: var(--color-dark);
-}
+  .service-section .service-item .bg-dark i {
+    font-size: 28px;
+    color: var(--color-dark);
+  }
 
-/* Estilos reutilizables */
-.text-yellow {
-  color: var(--color-primary) !important;
-}
+  /* Estilos reutilizables */
+  .service-section .text-yellow {
+    color: var(--color-primary) !important;
+  }
 
-.bg-yellow {
-  background-color: var(--color-primary) !important;
-}
+  .service-section .bg-yellow {
+    background-color: var(--color-primary) !important;
+  }
 
-.text-black {
-  color: var(--color-dark) !important;
-}
+  .service-section .text-black {
+    color: var(--color-dark) !important;
+  }
 
-.bg-black {
-  background-color: var(--color-dark) !important;
-}
+  .service-section .bg-black {
+    background-color: var(--color-dark) !important;
+  }
 </style>
 
 <!-- Service Start -->
-<div class="container-xxl py-5">
+<div class="service-section container-xxl py-5">
   <div class="container">
     <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
       <p class="d-inline-block bg-black text-yellow py-1 px-4">Cursos</p>

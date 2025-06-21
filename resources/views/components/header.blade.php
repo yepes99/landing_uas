@@ -1,10 +1,7 @@
 <style>
 .navbar {
   background: rgba(15, 15, 15, 0.5); /* negro semitransparente */
-  backdrop-filter: var(--glass-effect);
-  -webkit-backdrop-filter: var(--glass-effect);
-  box-shadow: var(--neon-shadow);
-  transition: var(--transition-normal);
+
 }
 
 .navbar h1{
