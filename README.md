@@ -1,61 +1,128 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📘 Proyecto Laravel – Curso de Arte Digital
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este proyecto es una landing page desarrollada en Laravel para promocionar un curso online ficticio de arte digital. Ha sido diseñado como parte de una prueba técnica orientada a evaluar tanto diseño visual como implementación técnica.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🎯 Objetivo del Proyecto
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* Crear una landing page estética y funcional para un curso de arte digital.
+* Enfocarse en una estructura visual clara, estilo minimalista retro e impacto visual.
+* Aplicar los colores de marca: `#f0b80e`, `#000`, `#252525`, `#333333`.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 📂 Requisitos Previos
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Antes de comenzar, asegúreate de tener instalado lo siguiente:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+* PHP ≥ 8.1
+* Composer
+* Laravel ≥ 10.x
+* MySQL o MariaDB
+* Node.js y npm
+* XAMPP / Laravel Valet / Docker (según tu entorno de desarrollo)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🚀 Instalación y Puesta en Marcha
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Opción A – Clonar desde GitHub
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+git clone https://github.com/yepes99/landing_uas.git
+cd curso-arte-digital-laravel
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Opción B – Descargar ZIP
 
-## Code of Conduct
+1. Descarga el archivo ZIP desde el repositorio o medio proporcionado.
+2. Extrae el contenido en tu entorno local.
+3. Abre una terminal dentro de la carpeta extraída:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+cd curso-arte-digital-laravel
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+### 1. Instalar dependencias PHP
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+composer install
+```
+
+### 2. Copiar el archivo de entorno
+
+
+cp .env.example .env
+
+
+### 3. Generar la clave de aplicación
+
+
+php artisan key:generate
+
+
+### 4. Configurar archivo `.env`
+
+Edita el archivo `.env` para establecer tus datos de conexión a la base de datos:
+
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nombre_base_datos
+DB_USERNAME=usuario
+DB_PASSWORD=contraseña
+
+
+### 5. Crear la base de datos
+Puedes crearla manualmente desde MySQL Workbench, phpMyAdmin o línea de comandos.
+
+
+### 6. Ejecutar migraciones 
+
+php artisan migrate
+
+
+### 7. Instalar dependencias frontend y compilar assets
+
+
+npm install
+npm run dev
+
+
+> Para producción, usar:
+npm run build
+
+
+## 💻 Ejecutar el proyecto
+
+Inicia el servidor local de Laravel:
+
+php artisan serve
+
+
+El proyecto estará disponible por defecto en:
+
+
+http://127.0.0.1:8000
+
+
+
+
+## 📷 Capturas de Pantalla / URL
+
+(Agregar capturas o URL si se ha desplegado en algún entorno online)
+
+
+
+## 📝 Notas Adicionales
+
+* Esta es una prueba técnica como parte de un proceso de selección.
+* El proyecto también incluye una versión en WordPress (ver carpeta `wordpress/`).
+
+---
+
+## 📄 Licencia
+
+Proyecto realizado con fines evaluativos. Uso libre bajo fines no comerciales.

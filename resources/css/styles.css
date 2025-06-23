@@ -350,9 +350,8 @@ body {
 .aboutus-experience-badge {
     width: 160px;
     border-radius: var(--border-radius-none);
-    background: var(--color-dark);
-    color: var(--color-primary);
-    box-shadow: 0 8px 20px rgba(240, 184, 14, 0.6);
+    background:var(--color-dark);
+    color: var(--color-primary); 
     font-family: var(--font-base);
     position: absolute;
     bottom: -80px;
