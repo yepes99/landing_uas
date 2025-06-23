@@ -119,7 +119,7 @@
   color: var(--color-primary) !important;
 }
 
-/* Estilo del texto del curso */
+
 .team-section .course-text {
   max-width: 600px;
   margin: 0 auto var(--spacing-large) auto;
@@ -130,10 +130,10 @@
   font-weight: 500;
 }
 
-/* ESTILO ESPECÍFICO team-info: fondo negro y texto amarillo */
+
 .team-info {
-  background-color: var(--color-dark) !important; /* fondo negro */
-  color: var(--color-primary) !important;          /* texto amarillo dorado */
+  background-color: var(--color-dark) !important;
+  color: var(--color-primary) !important;         
   padding: 1rem;
   transition: background-color 0.3s ease;
 }

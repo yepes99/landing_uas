@@ -32,13 +32,13 @@ body {
 
 
 .btn-gold {
-    background: linear-gradient(90deg, #fef08a, #facc15);
+
     color: #000;
     font-weight: 600;
     padding: 0.6rem 1.2rem;
     border-radius: 0 !important;
     text-transform: uppercase;
-    box-shadow: 0 0 3px rgba(250, 204, 21, 0.25); /* glow muy tenue */
+    box-shadow: 0 0 3px rgba(250, 204, 21, 0.25); 
     transition: all 0.3s ease-in-out;
     font-size: 0.95rem;
 }
@@ -52,3 +52,62 @@ body {
         0 0 12px rgba(255, 242, 0, 0.4);
 }
 
+
+
+.modal-content-no-radius {
+  border-radius: var(--border-radius-none) !important;
+  background-color: var(--color-dark); /* fondo oscuro según variable */
+  color: var(--color-white); /* texto claro */
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); /* sombra dorada clara */
+  font-family: var(--font-base);
+   max-height: 300px;
+}
+
+.modal-header-gold {
+  color: var(--color-primary); /* dorado */
+  border-radius: var(--border-radius-none) !important;
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+  background-color: transparent;
+}
+
+.modal-body-standard {
+  font-size: 1.125rem;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+.modal-message-text {
+  margin: 0;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.modal-footer-gold {
+  border-radius: var(--border-radius-none) !important;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.modal-btn-gold {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  border: none;
+  border-radius: var(--border-radius-none) !important;
+  padding: 0.6rem 2rem;
+  font-weight: var(--font-weight-bold);
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(191, 161, 74, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-btn-gold:hover,
+.modal-btn-gold:focus {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 6px 14px rgba(212, 175, 55, 0.9);
+  outline: none;
+}

@@ -33,3 +33,42 @@
 
   </div>
 </section>
+
+<!-- Modal de mensaje -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-content-no-radius">
+      <div class="modal-header modal-header-gold">
+        <h5 class="modal-title" id="contactModalLabel">Mensaje</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body modal-body-standard">
+        <p id="contactModalBody" class="modal-message-text"></p>
+      </div>
+      <div class="modal-footer modal-footer-gold">
+        <button type="button" class="btn modal-btn-gold" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    @if(session('success'))
+      var message = "{{ session('success') }}";
+      var modalBody = document.getElementById('contactModalBody');
+      modalBody.textContent = message;
+      var contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+      contactModal.show();
+    @elseif(session('error'))
+      var message = "{{ session('error') }}";
+      var modalBody = document.getElementById('contactModalBody');
+      modalBody.textContent = message;
+      var contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+      contactModal.show();
+    @endif
+  });
+</script>
+
+
