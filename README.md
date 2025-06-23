@@ -48,7 +48,7 @@ cd curso-arte-digital-laravel
 
 
 composer install
-```
+
 
 ### 2. Copiar el archivo de entorno
 
@@ -121,7 +121,7 @@ http://127.0.0.1:8000
 * Esta es una prueba técnica como parte de un proceso de selección.
 * El proyecto también incluye una versión en WordPress (ver carpeta `wordpress/`).
 
----
+
 
 ## 📄 Licencia
 
