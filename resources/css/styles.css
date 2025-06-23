@@ -1,7 +1,7 @@
 /* =======================
    VARIABLES CSS GLOBALES
    ======================= */
-   @import "bootstrap/dist/css/bootstrap.min.css";
+ @import "bootstrap/dist/css/bootstrap.min.css";
 
 
 @font-face {
@@ -15,9 +15,10 @@
   /* Colores */
   --color-primary: #f0b80e;
   --color-primary-dark: #e4a700;
-  --color-dark: #333232;
+  --color-dark: #252525;
   --color-light: #f0b80e;
   --color-white: #ffffff;
+  
 
   /* Tipografía */
   --font-base: 'Oswald Medium', sans-serif;

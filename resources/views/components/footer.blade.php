@@ -9,7 +9,7 @@
                     <div class="btn-square bg-dark flex-shrink-0 me-3">
                         <span class="fa fa-map-marker-alt text-primary"></span>
                     </div>
-                    <span>Calle Creativa 123, Ciudad Arte, España</span>
+                    <span>Calle Inventada 123, Ciudad Arte, España</span>
                 </div>
                 <div class="d-flex align-items-center mb-2">
                     <div class="btn-square bg-dark flex-shrink-0 me-3">
