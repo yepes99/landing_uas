@@ -393,7 +393,7 @@ body {
     display: block;
 }
 
-.aboutus-text h1,
+
 .aboutus-text h3 {
     font-family: var(--font-base);
     color: var(--color-primary);
@@ -436,13 +436,11 @@ body {
         color: var(--color-primary);
     }
 
-    .aboutus-text h1 {
+    .aboutus-text h3 {
         font-size: 2rem;
     }
 
-    .aboutus-text h3 {
-        font-size: 1.1rem;
-    }
+  
 
     .aboutus-lead {
         font-size: 1rem;

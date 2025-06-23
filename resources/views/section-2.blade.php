@@ -16,7 +16,7 @@
       <!-- Texto About -->
       <div class="col-lg-6 aboutus-wow-fadein aboutus-text" data-wow-delay="0.5s">
         <span class="badge aboutus-badge-warning text-dark fw-bold py-2 px-4 mb-4">SOBRE NOSOTROS</span>
-        <h1 class="text-uppercase fw-bold mb-4 display-5">¡Desbloquea Tu Creatividad Con Nuestro Curso de Arte Digital!</h1>
+        <h3 class="text-uppercase fw-bold mb-4 display-5">¡Desbloquea Tu Creatividad Con Nuestro Curso de Arte Digital!</h3>
         <p class="aboutus-lead mb-4">Nuestro completo programa de arte digital te enseña las herramientas y técnicas más recientes en diseño gráfico, modelado 3D, animación y arte conceptual. Ya seas principiante o artista experimentado, nuestro plan práctico te guía para desarrollar un estilo artístico único en el mundo digital.</p>
         <p class="mb-5">Con 25 años de experiencia en educación artística, hemos ayudado a miles de estudiantes a convertir su pasión en una carrera. Nuestros instructores expertos brindan retroalimentación personalizada y conocimientos de la industria para prepararte para el éxito en el mundo creativo.</p>
 
