@@ -111,7 +111,7 @@
   color: var(--color-primary) !important;
 }
 
-.team-section h1.text-uppercase {
+.team-section h2.text-uppercase {
   color: var(--color-primary);
 }
 
