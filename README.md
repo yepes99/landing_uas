@@ -1,8 +1,8 @@
 # 📘 Proyecto Laravel – Curso de Arte Digital
 
-Este proyecto es una landing page desarrollada en Laravel para promocionar un curso online ficticio de arte digital. Ha sido diseñado como parte de una prueba técnica orientada a evaluar tanto diseño visual como implementación técnica.
+Este proyecto es una landing page desarrollada en Laravel para promocionar un curso online ficticio de arte digital. 
 
----
+
 
 ## 🎯 Objetivo del Proyecto
 
@@ -10,7 +10,7 @@ Este proyecto es una landing page desarrollada en Laravel para promocionar un cu
 * Enfocarse en una estructura visual clara, estilo minimalista retro e impacto visual.
 * Aplicar los colores de marca: `#f0b80e`, `#000`, `#252525`, `#333333`.
 
----
+
 
 ## 📂 Requisitos Previos
 
@@ -23,7 +23,7 @@ Antes de comenzar, asegúreate de tener instalado lo siguiente:
 * Node.js y npm
 * XAMPP / Laravel Valet / Docker (según tu entorno de desarrollo)
 
----
+
 
 ## 🚀 Instalación y Puesta en Marcha
 
