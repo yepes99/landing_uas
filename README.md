@@ -112,8 +112,19 @@ http://127.0.0.1:8000
 
 ## 📷 Capturas de Pantalla / URL
 
-(Agregar capturas o URL si se ha desplegado en algún entorno online)
+![Captura de pantalla 2025-06-23 203031](https://github.com/user-attachments/assets/9ddd1647-74c0-4b4c-b9ed-cb92ad0335cd)
 
+![Captura de pantalla 2025-06-23 203040](https://github.com/user-attachments/assets/5d692aa3-b7e8-495e-b63a-e389b95ebc26)
+
+![Captura de pantalla 2025-06-23 203055](https://github.com/user-attachments/assets/27077762-850e-4fca-9985-1cf166c692d4)
+
+![Captura de pantalla 2025-06-23 203104](https://github.com/user-attachments/assets/d22b4264-489f-4bfa-be0f-5726325c1fed)
+
+![Captura de pantalla 2025-06-23 203117](https://github.com/user-attachments/assets/38e66cb0-aeee-477f-b23d-3ba16cdb014e)
+
+![Captura de pantalla 2025-06-23 203111](https://github.com/user-attachments/assets/57252e3b-4135-4e5c-afbe-391de624032e)
+
+![Captura de pantalla 2025-06-23 203123](https://github.com/user-attachments/assets/306a1cdd-d576-4635-8321-32ddef6e644b)
 
 
 ## 📝 Notas Adicionales
