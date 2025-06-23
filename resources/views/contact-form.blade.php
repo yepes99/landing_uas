@@ -1,9 +1,4 @@
-
-
-
- 
-
- <section id="contacto" class="contact-section">
+<section id="contacto" class="contact-section">
   <h2 class="section-title">Contacto</h2>
   <div class="contact-wrapper">
 
@@ -27,7 +22,8 @@
 
     <div class="contact-column">
       <h3>Escríbenos</h3>
-      <form action="#" method="POST" class="contact-form">
+      <form action="{{ route('contact.store') }}" method="POST" class="contact-form">
+        @csrf
         <input type="text" name="name" placeholder="Nombre" required>
         <input type="email" name="email" placeholder="Correo electrónico" required>
         <textarea name="message" placeholder="Mensaje" required></textarea>
